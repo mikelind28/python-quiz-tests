@@ -17,6 +17,7 @@ const Quiz = () => {
         throw new Error('something went wrong!');
       }
 
+      console.log(questions);
       setQuestions(questions);
     } catch (err) {
       console.error(err);
@@ -58,7 +59,7 @@ const Quiz = () => {
     return (
       <div className="card p-4 text-center">
         <h2>Quiz Completed</h2>
-        <div className="alert alert-success">
+        <div cy-data="success-message" className="alert alert-success">
           Your score: {score}/{questions.length}
         </div>
         <button className="btn btn-primary d-inline-block mx-auto" onClick={handleStartQuiz}>
@@ -83,7 +84,7 @@ const Quiz = () => {
   return (
     <div className='card p-4'>
       <h2>{currentQuestion.question}</h2>
-      <div className="mt-3">
+      <div cy-data="answer-array" className="mt-3">
       {currentQuestion.answers.map((answer, index) => (
         <div key={index} className="d-flex align-items-center mb-2">
           <button className="btn btn-primary" onClick={() => handleAnswerClick(answer.isCorrect)}>{index + 1}</button>
