@@ -1,3 +1,4 @@
+// make sure the API call actually receives 10 questions when starting the quiz
 describe('Start Quiz', () => {
     it('should GET 10 random quiz questions', () => {
         cy.intercept('GET', '/api/questions/random').as('getQuestions');

@@ -10,6 +10,7 @@ const Quiz = () => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false);
 
+  // fetch 10 random questions from the server
   const getRandomQuestions = async () => {
     try {
       const questions = await getQuestions();
