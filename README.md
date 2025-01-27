@@ -8,11 +8,11 @@ This project was an exercise in taking an existing application and adding tests 
 
 ## Usage
 
-[View a video demonstration here.]()
+[View a video demonstration here.](https://drive.google.com/file/d/1lWUISgS0t1qhETWWtB_nignBHVSM0PlI/view?usp=sharing)
 
 The video walkthrough above shows me testing the application in Cypress.
 
-![screenshot of Cypress testing demo](./images/)
+![screenshot of Cypress testing demo](./images/cypress-screenshot.png)
 
 ## Credits
 
