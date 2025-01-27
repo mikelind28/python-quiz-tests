@@ -11,4 +11,10 @@ describe('<Quiz />', () => {
         cy.mount(<Quiz />)
         cy.get('button').should('have.text', 'Start Quiz')
     })
+
+    it('should load 4 questions once the quiz is started', () => {
+        cy.mount(<Quiz />)
+        cy.get('button').click()
+        cy.get('button').should('have.length', 4)
+    })
 })
